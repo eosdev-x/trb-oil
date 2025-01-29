@@ -50,11 +50,19 @@ export default function Footer() {
 
           <div>
             <h3 className="text-xl font-bold mb-4">Certifications</h3>
-            <p className="text-gray-400">
+            <p className="text-gray-400 mb-6">
               ISO 9001:2015 Certified<br />
               API Q1 Certified<br />
               HSE Excellence Award 2023
             </p>
+            <a
+              href="https://trbinc.na2.echosign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhAcopalFLIldl3IercBElJwvE6VM-A4oKAHLEEvkmIMwflknHLPS7yKBLBF7M70fLE*"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Submit Application
+            </a>
           </div>
         </div>
         
