@@ -95,7 +95,7 @@ export default function Header() {
             aria-label="Return to homepage"
           >
             <img src={trbLogo} alt="TRB Logo" className="h-8 w-auto sm:h-10" />
-            <span className="text-lg sm:text-2xl font-bold text-gray-800 truncate">TRB Oilfield Services</span>
+            <span className="text-lg sm:text-2xl font-bold text-gray-800 truncate">Oilfield Services</span>
           </Link>
           
           {/* Desktop Navigation */}

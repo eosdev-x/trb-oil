@@ -37,7 +37,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
               <div className="relative h-64 overflow-hidden rounded-lg shadow-lg">
                 <img 
-                  src="/images/service-truck.jpg" 
+                  src="https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/trb_trucks_op.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL3RyYl90cnVja3Nfb3AuanBnIiwiaWF0IjoxNzM4MjE1OTE2LCJleHAiOjE4OTU4OTU5MTZ9.BvMVDKQYJGWNaam9Wdq7CJJUlPjEGC-KZhim1R6QzdI" 
                   alt="TRB Service Truck"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -45,7 +45,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-64 overflow-hidden rounded-lg shadow-lg">
                 <img 
-                  src="/images/equipment-operation.jpg" 
+                  src="https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/trb_op_op.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL3RyYl9vcF9vcC5qcGciLCJpYXQiOjE3MzgyMTU4MzksImV4cCI6MTg5NTg5NTgzOX0._roYg7V2D5FsFIUJovvdlR63luBxgWLNXhp3sC3K4CI" 
                   alt="Equipment Operation"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -76,7 +76,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-80 overflow-hidden rounded-lg shadow-lg">
                 <img 
-                  src="/images/facility-aerial.jpg" 
+                  src="https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/trb_overview_op.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL3RyYl9vdmVydmlld19vcC5qcGciLCJpYXQiOjE3MzgyMTU4NzQsImV4cCI6MTg5NTg5NTg3NH0.C2wZcUPbsgIJQB4Z3QIcKEwaiYhLEmfhE-yt97XWCXc" 
                   alt="TRB Facility Aerial View"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -102,7 +102,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative h-48 overflow-hidden rounded-lg shadow-lg">
                   <img 
-                    src="/images/storage-tanks.jpg" 
+                    src="https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/trb_tanks_op.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL3RyYl90YW5rc19vcC5qcGciLCJpYXQiOjE3MzgyMTU4OTcsImV4cCI6MTg5NTg5NTg5N30.b_NScYvPQzinlIR7-LujRAi5FCc7NFkVyS7f8_5G_TQ" 
                     alt="Storage Tanks"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-48 overflow-hidden rounded-lg shadow-lg">
                   <img 
-                    src="/images/field-equipment.jpg" 
+                    src="https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/trb_equipment_op.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL3RyYl9lcXVpcG1lbnRfb3AuanBnIiwiaWF0IjoxNzM4MjE1ODA0LCJleHAiOjE4OTU4OTU4MDR9.nxfdKBRWNpBoKj6AwGFKIJ9my0MxEITpseJTqjX--k8" 
                     alt="Field Equipment"
                     className="w-full h-full object-cover"
                     loading="lazy"
