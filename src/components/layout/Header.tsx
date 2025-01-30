@@ -1,7 +1,86 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import trbLogo from '../../assets/trb_logo.svg';
+
+const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => {
+  const location = useLocation();
+  const isHashLink = to.startsWith('/#');
+  
+  if (isHashLink) {
+    return (
+      <a
+        href={to}
+        className="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm xl:text-base"
+        onClick={(e) => {
+          if (location.pathname === '/') {
+            e.preventDefault();
+            const element = document.querySelector(to.substring(1));
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        }}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      to={to}
+      className="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm xl:text-base"
+    >
+      {children}
+    </Link>
+  );
+};
+
+const MobileNavLink = ({ 
+  to, 
+  children,
+  onClick 
+}: { 
+  to: string; 
+  children: React.ReactNode;
+  onClick: () => void;
+}) => {
+  const location = useLocation();
+  const isHashLink = to.startsWith('/#');
+
+  if (isHashLink) {
+    return (
+      <a
+        href={to}
+        className="block px-4 py-2 text-gray-600 hover:text-blue-600 hover:bg-gray-50 transition-colors"
+        onClick={(e) => {
+          onClick();
+          if (location.pathname === '/') {
+            e.preventDefault();
+            const element = document.querySelector(to.substring(1));
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        }}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      to={to}
+      className="block px-4 py-2 text-gray-600 hover:text-blue-600 hover:bg-gray-50 transition-colors"
+      onClick={onClick}
+    >
+      {children}
+    </Link>
+  );
+};
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,18 +89,23 @@ export default function Header() {
     <header className="bg-white shadow-md fixed w-full z-50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <Link 
+            to="/" 
+            className="flex items-center space-x-2 hover:opacity-90 transition-opacity"
+            aria-label="Return to homepage"
+          >
             <img src={trbLogo} alt="TRB Logo" className="h-8 w-auto sm:h-10" />
-            <span className="text-lg sm:text-2xl font-bold text-gray-800 truncate">Oilfield Services</span>
-          </div>
+            <span className="text-lg sm:text-2xl font-bold text-gray-800 truncate">TRB Oilfield Services</span>
+          </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden lg:flex space-x-8">
-            <NavLink href="#services">Services</NavLink>
-            <NavLink href="#equipment">Equipment</NavLink>
-            <NavLink href="#laboratory">Laboratory</NavLink>
-            <NavLink href="#tools-sales">Tools & Sales</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/#services">Services</NavLink>
+            <NavLink to="/#equipment">Equipment</NavLink>
+            <NavLink to="/#laboratory">Laboratory</NavLink>
+            <NavLink to="/#tools-sales">Tools & Sales</NavLink>
+            <NavLink to="/#contact">Contact</NavLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -38,25 +122,16 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4">
-            <div className="flex flex-col space-y-4">
-              <MobileNavLink href="#services" onClick={() => setIsMenuOpen(false)}>
-                Services
-              </MobileNavLink>
-              <MobileNavLink href="#equipment" onClick={() => setIsMenuOpen(false)}>
-                Equipment
-              </MobileNavLink>
-              <MobileNavLink href="#laboratory" onClick={() => setIsMenuOpen(false)}>
-                Laboratory
-              </MobileNavLink>
-              <MobileNavLink href="#tools-sales" onClick={() => setIsMenuOpen(false)}>
-                Tools & Sales
-              </MobileNavLink>
-              <MobileNavLink href="#contact" onClick={() => setIsMenuOpen(false)}>
-                Contact
-              </MobileNavLink>
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4">
+            <div className="flex flex-col">
+              <MobileNavLink to="/about" onClick={() => setIsMenuOpen(false)}>About</MobileNavLink>
+              <MobileNavLink to="/#services" onClick={() => setIsMenuOpen(false)}>Services</MobileNavLink>
+              <MobileNavLink to="/#equipment" onClick={() => setIsMenuOpen(false)}>Equipment</MobileNavLink>
+              <MobileNavLink to="/#laboratory" onClick={() => setIsMenuOpen(false)}>Laboratory</MobileNavLink>
+              <MobileNavLink to="/#tools-sales" onClick={() => setIsMenuOpen(false)}>Tools & Sales</MobileNavLink>
+              <MobileNavLink to="/#contact" onClick={() => setIsMenuOpen(false)}>Contact</MobileNavLink>
             </div>
           </div>
         )}
@@ -64,30 +139,3 @@ export default function Header() {
     </header>
   );
 }
-
-const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <a
-    href={href}
-    className="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm xl:text-base"
-  >
-    {children}
-  </a>
-);
-
-const MobileNavLink = ({ 
-  href, 
-  children, 
-  onClick 
-}: { 
-  href: string; 
-  children: React.ReactNode;
-  onClick: () => void;
-}) => (
-  <a
-    href={href}
-    className="text-gray-600 hover:text-blue-600 transition-colors font-medium block py-2 px-4 hover:bg-gray-50 rounded"
-    onClick={onClick}
-  >
-    {children}
-  </a>
-);
