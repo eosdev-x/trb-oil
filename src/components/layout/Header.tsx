@@ -1,6 +1,7 @@
 import React from 'react';
-import { Menu, X, HardHat } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import trbLogo from '../../assets/trb_logo.svg';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,8 +11,8 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <HardHat className="h-6 w-6 sm:h-8 sm:w-8 text-blue-600" />
-            <span className="text-lg sm:text-2xl font-bold text-gray-800 truncate">TRB Oilfield Services</span>
+            <img src={trbLogo} alt="TRB Logo" className="h-8 w-auto sm:h-10" />
+            <span className="text-lg sm:text-2xl font-bold text-gray-800 truncate">Oilfield Services</span>
           </div>
           
           {/* Desktop Navigation */}
