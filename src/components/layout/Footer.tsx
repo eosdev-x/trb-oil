@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Printer } from 'lucide-react';
+import { Phone, Mail, MapPin, Printer, Facebook, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -34,6 +34,26 @@ export default function Footer() {
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-blue-400" />
                 <span>info@trb-oil.com</span>
+              </div>
+              <div className="flex items-center space-x-4 mt-4">
+                <a 
+                  href="https://fb.me/TRBINC" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Visit TRB on Facebook"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
+                  <Facebook className="h-6 w-6" />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/trbinc" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Visit TRB on LinkedIn"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
+                  <Linkedin className="h-6 w-6" />
+                </a>
               </div>
             </div>
           </div>
