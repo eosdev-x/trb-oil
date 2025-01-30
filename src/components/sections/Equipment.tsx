@@ -2,7 +2,7 @@ import React from 'react';
 
 const equipment = [
   {
-    image: "src/assets/trb_cpu_op.jpg",
+    image: "https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/trb_cpu_op.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL3RyYl9jcHVfb3AuanBnIiwiaWF0IjoxNzM4MjExMDU1LCJleHAiOjE4OTU4OTEwNTV9.hbZd6IS7SeUNLF-cKffPzAUtkiBPy_HRBFEEPeTs8aw",
     title: "Coiled Tubing Units",
     specs: [
       "Working pressure: 15,000 psi",
@@ -11,7 +11,7 @@ const equipment = [
     ]
   },
   {
-    image: "src/assets/trb_cement_op.jpg",
+    image: "https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/trb_cement_op.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL3RyYl9jZW1lbnRfb3AuanBnIiwiaWF0IjoxNzM4MjExMDg3LCJleHAiOjE4OTU4OTEwODd9.gWwoVJyPMY0ipK4CONGmVaB9L4rhIL25_p-DZ8piUYU",
     title: "Cementing Units",
     specs: [
       "Pump rate: 15 bpm",
@@ -20,7 +20,7 @@ const equipment = [
     ]
   },
   {
-    image: "src/assets/trb_nitro_op.jpg",
+    image: "https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/trb_nitro_op.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL3RyYl9uaXRyb19vcC5qcGciLCJpYXQiOjE3MzgyMTExMDYsImV4cCI6MTg5NTg5MTEwNn0.jDIRZE_O6nfrEUxG1ZhZQkO3zOKTs67yVQOiZeykyEs",
     title: "Nitrogen Pumping Units",
     specs: [
       "Discharge pressure: 10,000 psi",
