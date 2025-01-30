@@ -2,7 +2,7 @@ import React from 'react';
 
 const equipment = [
   {
-    image: "https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/Coiled_Tubing_Unit.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL0NvaWxlZF9UdWJpbmdfVW5pdC5qcGciLCJpYXQiOjE3MzgwMTgzMDQsImV4cCI6MTc2OTU1NDMwNH0.AeDldMCTfRIFWCp-jyf0KGFtJcL8BoETnjwUIF3ssQs",
+    image: "src/assets/trb_cpu_op.jpg",
     title: "Coiled Tubing Units",
     specs: [
       "Working pressure: 15,000 psi",
@@ -11,7 +11,7 @@ const equipment = [
     ]
   },
   {
-    image: "https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/Trailer_Mounted_Cement_Unit.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL1RyYWlsZXJfTW91bnRlZF9DZW1lbnRfVW5pdC5qcGciLCJpYXQiOjE3MzgwMTgzNzQsImV4cCI6MTc2OTU1NDM3NH0.-JLB79KOFnSxY-P465EAs4Yf2QN2s8DFL3lxQ85Sy8w",
+    image: "src/assets/trb_cement_op.jpg",
     title: "Cementing Units",
     specs: [
       "Pump rate: 15 bpm",
@@ -20,7 +20,7 @@ const equipment = [
     ]
   },
   {
-    image: "https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/hydrogenPumpingUnit.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL2h5ZHJvZ2VuUHVtcGluZ1VuaXQuanBlZyIsImlhdCI6MTczODAxODM4OCwiZXhwIjoxNzY5NTU0Mzg4fQ.LdOB_ugK_BmOWhoQ2M_UyB1ZR85wPoFpRRPa-neNcbw",
+    image: "src/assets/trb_nitro_op.jpg",
     title: "Nitrogen Pumping Units",
     specs: [
       "Discharge pressure: 10,000 psi",

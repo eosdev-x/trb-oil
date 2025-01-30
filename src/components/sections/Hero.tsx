@@ -6,7 +6,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("https://qxpzubxgahiruuxnzlev.supabase.co/storage/v1/object/sign/TRB-assets/oilfield2.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUUkItYXNzZXRzL29pbGZpZWxkMi5qcGciLCJpYXQiOjE3MzgwMTg0OTEsImV4cCI6MTc2OTU1NDQ5MX0.bPowxLv_mytBT00wLuOqUYivypeaoIBgIpzkK8Mv7zc")',
+          backgroundImage: 'url("src/assets/trb_hero_op.jpg")',
         }}
       >
         <div className="absolute inset-0 bg-gray-900/70"></div>
