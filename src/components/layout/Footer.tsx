@@ -2,6 +2,15 @@ import React from 'react';
 import { Phone, Mail, MapPin, Printer, Facebook, Linkedin } from 'lucide-react';
 
 export default function Footer() {
+  const locationAddress = "1806 Turner Lane, Bakersfield, CA 93308";
+  const phoneNumber = "661-587-2691";
+  const faxNumber = "661-587-7468";
+  const email = "info@trb-oil.com";
+  
+  const getGoogleMapsUrl = (address: string) => {
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+  };
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
@@ -11,10 +20,15 @@ export default function Footer() {
             <div className="space-y-3">
               <div>
                 <p className="text-gray-400 mb-2">Location Address:</p>
-                <div className="flex items-start space-x-2">
-                  <MapPin className="h-5 w-5 text-blue-400 mt-1 flex-shrink-0" />
+                <a
+                  href={getGoogleMapsUrl(locationAddress)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start space-x-2 hover:text-blue-400 transition-colors group"
+                >
+                  <MapPin className="h-5 w-5 text-blue-400 mt-1 flex-shrink-0 group-hover:text-blue-500" />
                   <span>1806 Turner Lane<br />Bakersfield, CA 93308</span>
-                </div>
+                </a>
               </div>
               <div>
                 <p className="text-gray-400 mb-2">Mailing Address:</p>
@@ -23,17 +37,32 @@ export default function Footer() {
                   <span>P.O. Box 82276<br />Bakersfield, CA 93380</span>
                 </div>
               </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="h-5 w-5 text-blue-400" />
-                <span>Tel: 661-587-2691</span>
+              <div>
+                <a
+                  href={`tel:+1-${phoneNumber}`}
+                  className="flex items-center space-x-2 hover:text-blue-400 transition-colors group"
+                >
+                  <Phone className="h-5 w-5 text-blue-400 group-hover:text-blue-500" />
+                  <span>Tel: {phoneNumber}</span>
+                </a>
               </div>
-              <div className="flex items-center space-x-2">
-                <Printer className="h-5 w-5 text-blue-400" />
-                <span>Fax: 661-587-7468</span>
+              <div>
+                <a
+                  href={`fax:+1-${faxNumber}`}
+                  className="flex items-center space-x-2 hover:text-blue-400 transition-colors group"
+                >
+                  <Printer className="h-5 w-5 text-blue-400 group-hover:text-blue-500" />
+                  <span>Fax: {faxNumber}</span>
+                </a>
               </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="h-5 w-5 text-blue-400" />
-                <span>info@trb-oil.com</span>
+              <div>
+                <a
+                  href={`mailto:${email}`}
+                  className="flex items-center space-x-2 hover:text-blue-400 transition-colors group"
+                >
+                  <Mail className="h-5 w-5 text-blue-400 group-hover:text-blue-500" />
+                  <span>{email}</span>
+                </a>
               </div>
               <div className="flex items-center space-x-4 mt-4">
                 <a 
