@@ -1,4 +1,3 @@
-import React from 'react';
 import { Wrench, Package } from 'lucide-react';
 import { CategoryList } from './CategoryList';
 import { TeamSection } from './TeamSection';

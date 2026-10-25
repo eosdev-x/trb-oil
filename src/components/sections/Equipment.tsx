@@ -1,8 +1,10 @@
-import React from 'react';
+import coiledTubingImage from '../../assets/trb_cpu_op.jpg';
+import cementingImage from '../../assets/trb_cement_op.jpg';
+import nitrogenImage from '../../assets/trb_nitro_op.jpg';
 
 const equipment = [
   {
-    image: "https://eivvclmcyhtilruderyw.supabase.co/storage/v1/object/public/TRB-assets//trb_cpu_op.jpg",
+    image: coiledTubingImage,
     title: "Coiled Tubing Units",
     specs: [
       "Working pressure: 15,000 psi",
@@ -11,7 +13,7 @@ const equipment = [
     ]
   },
   {
-    image: "https://eivvclmcyhtilruderyw.supabase.co/storage/v1/object/public/TRB-assets//trb_cement_op.jpg",
+    image: cementingImage,
     title: "Cementing Units",
     specs: [
       "Pump rate: 15 bpm",
@@ -20,7 +22,7 @@ const equipment = [
     ]
   },
   {
-    image: "https://eivvclmcyhtilruderyw.supabase.co/storage/v1/object/public/TRB-assets//trb_nitro_op.jpg",
+    image: nitrogenImage,
     title: "Nitrogen Pumping Units",
     specs: [
       "Discharge pressure: 10,000 psi",
@@ -48,6 +50,8 @@ export default function Equipment() {
                 <img 
                   src={item.image} 
                   alt={item.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
                 />
               </div>

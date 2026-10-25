@@ -1,4 +1,3 @@
-import React from 'react';
 import { Droplet, Wrench, Beaker, Wind, ShoppingBag, Activity } from 'lucide-react';
 
 const services = [
