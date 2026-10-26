@@ -1,4 +1,3 @@
-import React from 'react';
 import { Beaker, Microscope, FileSpreadsheet } from 'lucide-react';
 
 export default function Laboratory() {

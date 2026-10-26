@@ -1,4 +1,4 @@
-import React from 'react';
+import heroImage from '../../assets/trb_hero_op.jpg';
 
 export default function Hero() {
   return (
@@ -6,7 +6,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("https://eivvclmcyhtilruderyw.supabase.co/storage/v1/object/public/TRB-assets//trb_hero_op.jpg")',
+          backgroundImage: `url("${heroImage}")`,
         }}
       >
         <div className="absolute inset-0 bg-gray-900/70"></div>

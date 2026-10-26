@@ -1,4 +1,8 @@
-import React from 'react';
+import trucksImage from '../assets/trb_trucks_op.jpg';
+import equipmentImage from '../assets/trb_equipment_op.jpg';
+import overviewImage from '../assets/trb_overview_op.jpg';
+import tanksImage from '../assets/trb_tanks_op.jpg';
+import opImage from '../assets/trb_op_op.jpg';
 
 export default function AboutPage() {
   return (
@@ -37,7 +41,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
               <div className="relative h-64 overflow-hidden rounded-lg shadow-lg">
                 <img 
-                  src="https://eivvclmcyhtilruderyw.supabase.co/storage/v1/object/public/TRB-assets//trb_trucks_op.jpg" 
+                  src={trucksImage}
                   alt="TRB Service Truck"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -45,8 +49,8 @@ export default function AboutPage() {
               </div>
               <div className="relative h-64 overflow-hidden rounded-lg shadow-lg">
                 <img 
-                  src="https://eivvclmcyhtilruderyw.supabase.co/storage/v1/object/public/TRB-assets//trb_equipment_op.jpg" 
-                  alt="Equipment Operation"
+                  src={equipmentImage}
+                  alt="TRB technician working on oilfield equipment"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -76,7 +80,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-80 overflow-hidden rounded-lg shadow-lg">
                 <img 
-                  src="https://eivvclmcyhtilruderyw.supabase.co/storage/v1/object/public/TRB-assets//trb_overview_op.jpg" 
+                  src={overviewImage}
                   alt="TRB Facility Aerial View"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -102,7 +106,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative h-48 overflow-hidden rounded-lg shadow-lg">
                   <img 
-                    src="https://eivvclmcyhtilruderyw.supabase.co/storage/v1/object/public/TRB-assets//trb_tanks_op.jpg" 
+                    src={tanksImage}
                     alt="Storage Tanks"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -110,8 +114,8 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-48 overflow-hidden rounded-lg shadow-lg">
                   <img 
-                    src="https://eivvclmcyhtilruderyw.supabase.co/storage/v1/object/public/TRB-assets//trb_op_op.jpg" 
-                    alt="Field Equipment"
+                    src={opImage}
+                    alt="Crane lifting coiled tubing equipment at a well site"
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />

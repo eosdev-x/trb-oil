@@ -1,5 +1,4 @@
-import React from 'react';
-import { Wrench, Package, Settings, Users } from 'lucide-react';
+import { Wrench, Package, Users } from 'lucide-react';
 
 const serviceEquipment = [
   {
